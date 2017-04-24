@@ -12,7 +12,7 @@ def degrees2radians(angle):
 
 
 def move(distance, isForward):
-    speed = 1.0
+    speed = 0.2
     outData = Twist()
     t0 = rospy.get_rostime().secs
     current_distance = 0
