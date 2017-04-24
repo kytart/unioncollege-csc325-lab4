@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 import rospy, math
-from std_msgs.msg import String
-from turtlesim.msg import Pose
 from geometry_msgs.msg import Twist
 
 pub = rospy.Publisher('/cmd_vel_mux/input/teleop', Twist, queue_size=10)
@@ -76,7 +74,4 @@ def init():
 
 if __name__ == '__main__':
     init()
-    move(5.0, True)
-    rotate(degrees2radians(45), True)
-    move(5.0, False)
-    rotate(degrees2radians(45), False)
+    drawSquare(3.0)
