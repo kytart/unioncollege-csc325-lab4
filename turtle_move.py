@@ -74,4 +74,4 @@ def init():
 
 if __name__ == '__main__':
     init()
-    drawSquare(3.0)
+    drawSquare(2.0)
