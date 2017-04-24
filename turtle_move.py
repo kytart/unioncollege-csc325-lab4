@@ -61,7 +61,7 @@ def rotate(relative_angle, isClockwise):
 
 
 def drawSquare(square_size):
-    for x in range(0, 3):
+    for x in range(0, 4):
         if x > 0:
             rotate(degrees2radians(90), True)
 
