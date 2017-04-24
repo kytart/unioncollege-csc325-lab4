@@ -35,7 +35,7 @@ def move(distance, isForward):
 
 
 def rotate(relative_angle, isClockwise):
-    speed = degrees2radians(4.0)
+    speed = degrees2radians(30.0)
     outData = Twist()
 
     t0 = rospy.get_rostime().secs
