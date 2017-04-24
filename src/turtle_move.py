@@ -2,6 +2,11 @@
 import rospy, math
 from geometry_msgs.msg import Twist
 
+# NOTE: move_goal won't work because it needs to know where are the goal coordinates
+# and where is the turtlebot currently to calculate the linear and angular velocity.
+# In Gazebo there is no absolute coordinate system or at least there are no absolute coordinates published
+# by the running nodes so I can't use it.
+
 pub = rospy.Publisher('/cmd_vel_mux/input/teleop', Twist, queue_size=10)
 
 
@@ -74,4 +79,4 @@ def init():
 
 if __name__ == '__main__':
     init()
-    drawSquare(2.0)
+    drawSquare(2.0)  # for real turtlebot I changed this to 1.0
